@@ -1,9 +1,9 @@
 {
-  "title": "Blog by John Doe",
-  "url": "https://lumen.alxshelepenok.com",
-  "subtitle": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+  "title": "anydub",
+  "url": "https://anydub.com",
+  "subtitle": "",
   "copyright": "© All rights reserved.",
-  "googleAnalyticsId": "UA-73379983-2",
+  "googleAnalyticsId":"G-KRWBF2E4TG",
   "disqusShortname": "",
   "postsLimit": 4,
   "pathPrefix": "/",
@@ -15,30 +15,26 @@
     {
       "label": "About me",
       "path": "/pages/about"
-    },
-    {
-      "label": "Contact me",
-      "path": "/pages/contacts"
     }
   ],
   "author": {
-    "name": "John Doe",
-    "photo": "/photo.jpg",
-    "bio": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "name": "anydub",
+    "photo": "/static/media/anydub.png",
+    "bio": "dub anything, keep dubbing",
     "contacts": {
       "rss": "",
       "email": "",
-      "github": "#",
-      "facebook": "#",
-      "telegram": "#",
-      "twitter": "#",
-      "linkedin": "#",
-      "instagram": "#",
+      "github": "apptain",
+      "facebook": "apptain",
+      "telegram": "",
+      "twitter": "apptain",
+      "linkedin": "apptain",
+      "instagram": "apptain",
       "line": "",
       "weibo": "",
       "gitlab": "",
       "medium": "",
-      "youtube": "",
+      "youtube": "apptain",
       "codepen": "",
       "soundcloud": ""
     }

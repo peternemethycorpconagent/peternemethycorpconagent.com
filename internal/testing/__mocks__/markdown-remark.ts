@@ -3,7 +3,7 @@ export default {
   fields: {
     slug: "/posts/perfecting-the-art-of-perfection",
     tagsSlugs: ["/handwriting", "/helvetica"],
-    categorySlug: "/typography",
+    category: "/typography",
   },
   frontmatter: {
     date: "2016-09-01",

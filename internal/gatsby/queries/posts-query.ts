@@ -16,6 +16,9 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
           node {
             fields {
               slug
+            },
+            frontmatter {
+              video
             }
           }
         }

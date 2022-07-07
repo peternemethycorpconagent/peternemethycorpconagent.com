@@ -11,7 +11,7 @@ interface Frontmatter {
 
 interface Fields {
   slug?: string;
-  categorySlug?: string;
+  category?: string;
   tagSlugs?: Array<string>;
 }
 

@@ -183,13 +183,13 @@ export default {
         },
       },
     },
-    {
-      resolve: "@sentry/gatsby",
-      options: {
-        dsn: process.env.SENTRY_DSN,
-        tracesSampleRate: 1,
-      },
-    },
+    // {
+    //   resolve: "@sentry/gatsby",
+    //   options: {
+    //     dsn: process.env.SENTRY_DSN,
+    //     tracesSampleRate: 1,
+    //   },
+    // },
     "gatsby-plugin-image",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-react-helmet",
