@@ -1,6 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing';
+import Modal from "react-responsive-modal";
+import { navigate } from 'gatsby';
 
 import { useSiteMetadata } from "@/hooks";
 
@@ -39,10 +41,27 @@ const ModalLayout: React.FC<Props> = ({
       <ModalRoutingContext.Consumer>
         {({ modal, closeTo }) => (
                     <React.Fragment>
-                    <Link to={closeTo}>
-                      Close
-                    </Link>
-                    {children}
+                      <Modal
+        open={true}
+        onClose={navigate(closeTo)}
+        styles={{
+          modal: {
+            maxWidth: "unset",
+            width: "100%",
+            padding: "unset"
+          },
+          overlay: {
+            background: "rgba(0, 0, 0, 0.5)"
+          },
+          closeButton: {
+            background: "yellow"
+          }
+        }}
+        center
+      >{children}</Modal>
+  
+                    
+                    
                   </React.Fragment>
           
         )}

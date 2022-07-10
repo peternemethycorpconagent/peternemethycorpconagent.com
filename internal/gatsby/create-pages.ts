@@ -52,14 +52,14 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
       console.log('some shit');
       console.log(JSON.stringify(node));
       console.log(JSON.stringify(node?.frontmatter));
-      // if (node?.frontmatter?.video) {
-      //   console.log('create video modal');
-      //   createPage({
-      //     path: node.fields.slug + '/video', //todo type
-      //     component: constants.templates.modalPageTemplate,
-      //     context: { slug: node.fields.slug },
-      //   });
-      // }
+      if (node?.frontmatter?.video) {
+        console.log('create video modal');
+        createPage({
+          path: node.fields.slug + '/video', //todo type
+          component: constants.templates.modalPageTemplate,
+          context: { slug: node.fields.slug },
+        });
+      }
       createPage({
         path: node.fields.slug,
         component: constants.templates.postTemplate,

@@ -6,6 +6,7 @@ import { ModalLayout } from "@/components/Layout";
 import { Post } from "@/components/Post";
 import { useSiteMetadata } from "@/hooks";
 import { Node } from "@/types";
+import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 
 interface Props {
   data: {
@@ -16,16 +17,21 @@ interface Props {
 const ModalPageTemplate: React.FC<Props> = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { frontmatter } = data.markdownRemark;
-  const { title, description = "", socialImage } = frontmatter;
+  const { title, video, tags, description } = frontmatter;
   const metaDescription = description || siteSubtitle;
 
   return (
     <ModalLayout
       title={`${title} - ${siteTitle}`}
       description={metaDescription}
-      socialImage={socialImage}
+      // socialImage={socialImage}
     >
-      <Post post={data.markdownRemark} />
+      <VideoPlayer
+          url={video}
+          title={title}
+          topics={tags}
+          key={video}
+      ></VideoPlayer>
     </ModalLayout>
   );
 };

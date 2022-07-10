@@ -4,6 +4,10 @@
 .feed {
   .item {
     @include margin-bottom(1.25);
+    padding: .33rem 1rem;
+    &:hover {
+      box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    }
 
     &:last-child {
       @include margin-bottom(0.5);
@@ -28,17 +32,17 @@
 
     .image {
       background-position: center;
-    @media (min-width: 576px) {
-      min-height: 15rem;
-    }
-    max-height: 15rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 5.7rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    transition: all 0.5s ease 0s;
+      @media (min-width: 576px) {
+        min-height: 15rem;
+      }
+      max-height: 15rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      min-height: 5.7rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      transition: all 0.5s ease 0s;
       object-fit: cover;
       background-size: cover;
       background-position: center;
