@@ -15,7 +15,8 @@ const pagesQuery = async (graphql: CreatePagesArgs["graphql"]) => {
         edges {
           node {
             frontmatter {
-              template
+              template,
+              video
             }
             fields {
               slug

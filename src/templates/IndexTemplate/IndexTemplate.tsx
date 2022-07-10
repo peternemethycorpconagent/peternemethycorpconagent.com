@@ -62,7 +62,9 @@ export const query = graphql`
             description
             category
             title
-            date
+            date,
+            socialImage,
+            video
           }
         }
       }

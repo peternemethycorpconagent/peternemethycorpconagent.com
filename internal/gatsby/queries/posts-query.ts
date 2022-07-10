@@ -18,6 +18,7 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
               slug
             },
             frontmatter {
+              socialImage,
               video
             }
           }
@@ -25,6 +26,7 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
       }
     }
   `);
+  console.log(result?.data?.allMarkdownRemark);
 
   return result?.data?.allMarkdownRemark;
 };

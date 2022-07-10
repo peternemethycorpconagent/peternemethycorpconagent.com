@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import type { Node } from "@/types";
+import { Image } from "@/components/Image";
 
 import { Author } from "./Author";
 import { Comments } from "./Comments";
@@ -19,13 +20,19 @@ interface Props {
 const Post: React.FC<Props> = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date } = post.frontmatter;
+  const { tags, title, date, socialImage, video } = post.frontmatter;
 
   return (
     <div className={styles.post}>
       <Link className={styles.button} to="/">
         All Articles
       </Link>
+
+      <Image
+        // alt={slug}
+        className={styles.image}
+        path={socialImage}
+      />
 
       <div className={styles.content}>
         <Content body={html} title={title} />

@@ -2,6 +2,45 @@
 @import "../../assets/scss/mixins";
 
 .post {
+  .image {
+    background-position: center;
+    @media (min-width: 576px) {
+      min-height: 15rem;
+    }
+    max-height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 5.7rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 576px) {
+      min-height: 15rem;
+    }
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    min-height: 5.7rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      opacity: 0.7;
+
+      .data {
+        transform: translateY(-1em);
+        transition: transform 0.3s;
+      }
+    }
+  }
+  
   .content {
     @include margin-auto();
   }

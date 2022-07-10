@@ -38,7 +38,7 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
   });
 
   const pages = await queries.pagesQuery(graphql);
-
+ 
   pages.forEach((edge) => {
     const { node } = edge;
 
@@ -49,6 +49,17 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
         context: { slug: node.fields.slug },
       });
     } else if (node?.frontmatter?.template === "post" && node?.fields?.slug) {
+      console.log('some shit');
+      console.log(JSON.stringify(node));
+      console.log(JSON.stringify(node?.frontmatter));
+      // if (node?.frontmatter?.video) {
+      //   console.log('create video modal');
+      //   createPage({
+      //     path: node.fields.slug + '/video', //todo type
+      //     component: constants.templates.modalPageTemplate,
+      //     context: { slug: node.fields.slug },
+      //   });
+      // }
       createPage({
         path: node.fields.slug,
         component: constants.templates.postTemplate,

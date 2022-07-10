@@ -24,6 +24,19 @@ export default {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: path.resolve("static/media"),
+        name: 'media'
+      }
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      // options: {
+      //   modulePath: `${__dirname}/../src/cms/index.js`
+      // }
+    },
+    {
       resolve: "gatsby-plugin-feed",
       options: {
         query: `
@@ -152,7 +165,7 @@ export default {
         short_name: config.title,
         theme_color: "hsl(31, 92%, 62%)",
         background_color: "hsl(0, 0%, 100%)",
-        icon: "content/photo.jpg",
+        icon: 'static/media/favico.png',
         display: "standalone",
         start_url: "/",
       },
@@ -195,5 +208,5 @@ export default {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sass",
-  ],
+  ]
 };
