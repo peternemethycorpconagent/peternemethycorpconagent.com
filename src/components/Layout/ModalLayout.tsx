@@ -1,8 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing';
-import Modal from "react-responsive-modal";
 import { navigate } from 'gatsby';
+import Modal from "react-modal";
+
 
 import { useSiteMetadata } from "@/hooks";
 
@@ -39,32 +40,22 @@ const ModalLayout: React.FC<Props> = ({
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
       <ModalRoutingContext.Consumer>
-        {({ modal, closeTo }) => (
-                    <React.Fragment>
-                      <Modal
-        open={true}
-        onClose={navigate(closeTo)}
-        styles={{
-          modal: {
-            maxWidth: "unset",
-            width: "100%",
-            padding: "unset"
-          },
-          overlay: {
-            background: "rgba(0, 0, 0, 0.5)"
-          },
-          closeButton: {
-            background: "yellow"
-          }
-        }}
-        center
-      >{children}</Modal>
-  
-                    
-                    
-                  </React.Fragment>
-          
-        )}
+        {({ modal, closeTo }) => {
+          debugger;
+          return (
+          <React.Fragment>
+             <Modal 
+              isOpen={true}
+              onRequestClose={() => navigate(closeTo)}
+              shouldCloseOnEsc={true}
+              shouldCloseOnOverlayClick={true}
+            >
+              <button className="button" onClick={() => navigate(closeTo)}>X</button>
+              {children}
+            </Modal>
+           
+          </React.Fragment>         
+        )}}
       </ModalRoutingContext.Consumer>
     </div>
   );
