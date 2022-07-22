@@ -16,14 +16,17 @@ interface Props {
 
 const ModalPageTemplate: React.FC<Props> = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
+
+  const { frontmatter, fields } = data.markdownRemark;
   const { title, video, tags, description } = frontmatter;
+  const { slug } = fields;
   const metaDescription = description || siteSubtitle;
 
   return (
     <ModalLayout
       title={`${title} - ${siteTitle}`}
       description={metaDescription}
+      closeTo={slug}
       // socialImage={socialImage}
     >
       <VideoPlayer

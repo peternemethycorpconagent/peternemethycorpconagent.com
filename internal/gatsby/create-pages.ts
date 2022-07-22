@@ -57,7 +57,7 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
         createPage({
           path: node.fields.slug + '/video', //todo type
           component: constants.templates.modalPageTemplate,
-          context: { slug: node.fields.slug },
+          context: { slug: node.fields.slug, closeTo: node.fields.slug },
         });
       }
       createPage({

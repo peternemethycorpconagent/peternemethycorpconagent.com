@@ -3,17 +3,22 @@ import Helmet from "react-helmet";
 import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing';
 import { navigate } from 'gatsby';
 import Modal from "react-modal";
-
+import { AllMarkdownRemark, ModalPageContext } from "@/types";
 
 import { useSiteMetadata } from "@/hooks";
-
 import * as styles from "./Layout.module.scss";
+
+Modal.setAppElement("#___gatsby");
+Modal.defaultStyles.overlay.backgroundColor = "black";
+
 
 interface Props {
   title: string;
   description?: string;
   socialImage?: string;
-  children: React.ReactNode;
+  slug: string;
+  closeTo: string;
+  children: React.ReactNode
 }
 
 const ModalLayout: React.FC<Props> = ({
@@ -21,7 +26,9 @@ const ModalLayout: React.FC<Props> = ({
   title,
   description,
   socialImage = "",
+  closeTo
 }: Props) => {
+  debugger;
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
   const metaImageUrl = url + metaImage;
@@ -40,7 +47,7 @@ const ModalLayout: React.FC<Props> = ({
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
       <ModalRoutingContext.Consumer>
-        {({ modal, closeTo }) => {
+        {() => {
           debugger;
           return (
           <React.Fragment>
