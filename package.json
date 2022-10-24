@@ -40,6 +40,11 @@
       "npm run format:scss"
     ]
   },
+  "resolutions": {
+    "react": "^18.2.0",
+    "@types/react": "^18.0.17",
+    "react-dom": "^18.2.0"
+  },
   "dependencies": {
     "bluebird": "^3.7.2",
     "classnames": "^2.3.2",
