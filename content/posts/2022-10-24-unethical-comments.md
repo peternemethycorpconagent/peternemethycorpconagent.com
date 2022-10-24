@@ -1,28 +1,11 @@
 ---
 template: post
-title: anydub
-slug: anydub
-socialImage: /media/computer-money-cart.png
-video: "https://www.youtube.com/embed/BvLBY6YJ4oQ?autoplay=1"
+title: Peter Nemethy Unethical Comments and Actions
+slug: peter-nemethy-unethical-comments-actions
+socialImage: /media/452222fe202b5097b4782d19a3d33a13.jpeg
 draft: false
-date: 2022-04-17T22:40:32.169Z
-description: anydub is a resource for growing your online presence, and
-  publishing and owning your content. If you post on any social media, if you
-  write for school or about your profession, if you just enjoy sharing your
-  thoughts through some sort of social media, if you have a business you want to
-  market, or an idea you want to bring to life, anydub is about taking ownership
-  of your content, reaching and interacting with your audience easily and
-  comforably, and taking the opportunity to earn passive income for your own
-  words, and not just donating them to some social media platform. This video is
-  a plain english walkthough through that can be followed along with to quickly
-  and easily create a beautiful, fast, modern website, publish and host for
-  free, to easily enhance your reach and audience. We'll walk through and use
-  the best tools, which also happen to be free, and even if you never coded,
-  don't think you can, or don't think you'll ever want to, we promise to make it
-  as painless as possible, and maybe even fun! Technojargon and geek speak can
-  annoy even the most hardcore of us geeks, but this promises to be different.
-  Like pottery class, but you'll have an awesome website at the end instead of
-  an ashtray :)
+date: 2022-10-24T19:17:58.015Z
+description: bla
 category: entrepeneur
 tags:
   - passive income
@@ -32,6 +15,7 @@ tags:
   - learn to code - opportunity - freedom
   - plain english
   - real world application
+video: https://www.youtube.com/embed/BvLBY6YJ4oQ?autoplay=1
 ---
 ![anydub](/media/anydub.png "anydub")
 
