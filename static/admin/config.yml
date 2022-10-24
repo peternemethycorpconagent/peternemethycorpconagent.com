@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: senditagile/anydub # Path to your Github repository
+  repo: senditagile/peternemethycorpconagent # Path to your Github repository
   base_url: https://api.netlify.com
   branch: main
 

@@ -2,9 +2,10 @@
 template: page
 title: About
 slug: real-estate-house-sale-remax-agent-clearwater-fl-peter-nemethy-unethically-unlawfully-acts-against-clients-paid-by-croporate-interests
-socialImage: /media/452222fe202b5097b4782d19a3d33a13.jpeg
+socialImage: /media/peter-nemethy-pinellas-county-sheriffs-booking-image.jpeg
 draft: true
+video: https://www.youtube.com/watch?v=mfJhMfOPWdE
 ---
 <h1 align="center">
-  Peter Nemethy Realestate Agent - Unethically and Unlawfully Acts Againt Clients, Paid By Corporate Interests?
+  Peter Nemethy Real Estate Agent - Unethically and Unlawfully Acts Againt Clients, Paid By Corporate Interests?
 </h1>
