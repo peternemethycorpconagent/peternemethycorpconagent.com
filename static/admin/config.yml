@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: senditagile/peternemethycorpconagent # Path to your Github repository
+  repo: peternemethycorpconagent/peternemethycorpconagent # Path to your Github repository
   base_url: https://api.netlify.com
   branch: main
 
