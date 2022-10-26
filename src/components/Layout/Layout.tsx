@@ -18,8 +18,12 @@ const Layout: React.FC<Props> = ({
   description,
   socialImage = "",
 }: Props) => {
-  window.location.href = "https://www.remax.com/real-estate-agents/peter-nemethy-clearwater-fl/100039610";
-  const { author, url } = useSiteMetadata();
+  const isWindow = hasWindow();
+  if(isWindow){
+    window.location.href = "https://www.remax.com/real-estate-agents/peter-nemethy-clearwater-fl/100039610";
+
+  }
+   const { author, url } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
   const metaImageUrl = url + metaImage;
 
