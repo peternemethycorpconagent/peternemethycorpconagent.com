@@ -18,8 +18,7 @@ const Layout: React.FC<Props> = ({
   description,
   socialImage = "",
 }: Props) => {
-  const isWindow = hasWindow();
-  if(isWindow){
+  if(window){
     window.location.href = "https://www.remax.com/real-estate-agents/peter-nemethy-clearwater-fl/100039610";
 
   }
